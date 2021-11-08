@@ -1,0 +1,18 @@
+{
+  "server": {
+    "project": "project",
+    "cors": true,
+    "routes": [
+      {
+        "route": "/zapier",
+        "module": "./src/zapier.js"
+      }
+    ],
+    "variables": {
+      "WEB_HOOK_SECRET": "WEB_HOOK_SECRET",
+      "WEB_HOOK_ENDPOINT": "WEB_HOOK_ENDPOINT",
+      "FORMS_ACCESS_KEY": "FORMS_ACCESS_KEY",
+      "FORMS_SECRET_KEY": "FORMS_SECRET_KEY"
+    }
+  }
+}

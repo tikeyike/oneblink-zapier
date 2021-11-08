@@ -1,0 +1,12 @@
+{
+  "name": "oneblink-zapier",
+  "version": "1.0.0",
+  "description": "A custom OneBlink submission event that posts form submission data to a zapier endpoint.",
+  "author": "Tarik Krajina",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@oneblink/sdk": "^0.16.0",
+    "axios": "^0.24.0"
+  }
+}
