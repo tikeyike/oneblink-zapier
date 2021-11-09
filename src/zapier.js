@@ -17,12 +17,12 @@ module.exports.post = async function webhook(req) {
     !req.body.submissionId ||
     !req.body.secret
   ) {
-    throw Boom.badRequest('Invalid webhook request payload', req.body)
+    throw Boom.badRequest('🛑 Invalid webhook request payload', req.body)
   }
 
   console.log('✅ Authorising webhook request')
   if (req.body.secret !== process.env.WEB_HOOK_SECRET) {
-    throw Boom.forbidden('Unauthorised', req.body)
+    throw Boom.forbidden('🛑 Unauthorised', req.body)
   }
 
   console.log('🎣 Retrieving form data for submission', {
